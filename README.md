@@ -4,6 +4,7 @@ C decryption tool. WORK IN PROGRESS
 # V1.0
 - Only has caesar support
 - Structure is still a bit new and experimental
+- Support for more ciphers coming soon
 
 # Usage
 ```
