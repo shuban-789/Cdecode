@@ -9,7 +9,7 @@ struct cipherkey
   int key;
 } ciphersolvekey;
 
-char* shift(int key, char ciphertext[])
+char* caesar(int key, char ciphertext[])
 {
   int lenstr = strlen(ciphertext);
   char* res = malloc((lenstr + 1) * sizeof(char));
@@ -72,9 +72,8 @@ int main(int argc, char *argv[])
       {
         int keyint = atoi(argv[4]);
         ciphersolvekey.key = keyint;
-        const char* decrypted = shift(ciphersolvekey.key, argv[6]);
+        const char* decrypted = caesar(ciphersolvekey.key, argv[6]);
         printf("%s\n",decrypted);
-        free(decrypted);
       }
     }
 }
