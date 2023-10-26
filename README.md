@@ -19,3 +19,4 @@ Put ciphertext in quotations, as versions go by, support for more ciphers will b
 |Caesar (-c arg: caesar)    |
 +---------------------------+
 ```
+Possible future features would be support for the ciphers int he "cryptographic-algorithms" repository, but coded in C and made to fit in to the current code.
